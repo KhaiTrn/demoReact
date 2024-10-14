@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.layout-wrapper {
+  @apply bg-white p-5 rounded-xl;
+}
+.layout-wrapper-2 {
+  padding: 20px;
+  background-color: red;
+  @apply rounded-xl;
+}
+
+.my-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* img {
+  @apply max-h-24;
+}
+
+p {
+  font-size: 20px;
+} */
+.myActive {
+  @apply text-red-700 bg-white !important;
+}
