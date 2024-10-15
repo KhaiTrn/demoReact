@@ -23,6 +23,10 @@ const routes = [
         element: About,
       },
       {
+        path: "about/:id",
+        element: About,
+      },
+      {
         path: "list-movie",
         element: ListMovie,
       },
