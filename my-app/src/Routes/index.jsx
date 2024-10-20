@@ -9,6 +9,7 @@ import Home from "../pages/HomeTemplate/Home";
 import ListMovie from "../pages/HomeTemplate/ListMovie";
 import Contact from "../pages/HomeTemplate/Contact";
 import PageNotFound from "../pages/PageNotFound";
+import DemoRedux from "../pages/HomeTemplate/DemoRedux/DemoRedux";
 const routes = [
   {
     path: "",
@@ -33,6 +34,10 @@ const routes = [
       {
         path: "contact",
         element: Contact,
+      },
+      {
+        path: "demo-redux",
+        element: DemoRedux,
       },
     ],
   },
