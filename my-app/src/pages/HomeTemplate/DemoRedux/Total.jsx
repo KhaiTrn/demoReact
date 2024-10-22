@@ -1,7 +1,9 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { handlePlayGame } from "../../../redux/slice/xiNgauSlice";
 
 const Total = () => {
+  const dispatch = useDispatch();
   const { banChon, tongSoBanChoi, tongSoBanThang, ketQua } = useSelector(
     (state) => state.xiNgauSlice
   );
@@ -21,7 +23,12 @@ const Total = () => {
       <p className="text-green-600">
         Kết quả: <span>{ketQua}</span>
       </p>
-      <button className="py-2 px-5 bg-black text-white rounded-md">
+      <button
+        onClick={() => {
+          dispatch(handlePlayGame());
+        }}
+        className="py-2 px-5 bg-black text-white rounded-md"
+      >
         Play game
       </button>
     </div>

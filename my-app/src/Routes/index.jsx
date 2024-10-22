@@ -10,6 +10,7 @@ import ListMovie from "../pages/HomeTemplate/ListMovie";
 import Contact from "../pages/HomeTemplate/Contact";
 import PageNotFound from "../pages/PageNotFound";
 import DemoRedux from "../pages/HomeTemplate/DemoRedux/DemoRedux";
+import DemoForm from "../pages/HomeTemplate/DemoForm/DemoForm";
 const routes = [
   {
     path: "",
@@ -38,6 +39,10 @@ const routes = [
       {
         path: "demo-redux",
         element: DemoRedux,
+      },
+      {
+        path: "demo-form",
+        element: DemoForm,
       },
     ],
   },

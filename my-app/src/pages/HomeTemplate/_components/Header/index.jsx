@@ -57,6 +57,14 @@ export default function Header() {
                 >
                   Demo Redux
                 </NavLink>
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? "myActive nav-link" : `nav-link`
+                  }
+                  to="/demo-form"
+                >
+                  Demo Form
+                </NavLink>
               </li>
             </ul>
           </div>

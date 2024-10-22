@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { handleChangeValueHoTen } from "../../../redux/slice/inputSlice";
 import BaiTapXiNgau from "./BaiTapXiNgau";
+import BaiTapShoes from "./BaiTapShoes";
 const DemoRedux = () => {
   const dispatch = useDispatch();
   const { hoTen } = useSelector((state) => state.inputSlice);
@@ -29,6 +30,7 @@ const DemoRedux = () => {
         />
       </div>
       <BaiTapXiNgau />
+      <BaiTapShoes />
     </div>
   );
 };
